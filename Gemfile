@@ -16,16 +16,9 @@ gem 'activerecord', '~>4.1'
 
 gem 'rake'
 
-gem 'shotgun'
-
 group :test do
-  gem 'shoulda-matchers'
   gem 'rack-test'
   gem 'rspec'
-  gem 'capybara'
-end
-
-group :test, :development do
-  gem 'factory_girl'
+  gem 'nokogiri', '~> 1.6.1'
   gem 'faker'
 end
