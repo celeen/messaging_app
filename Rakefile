@@ -131,4 +131,14 @@ task "console" do
   exec "irb -r./config/environment"
 end
 
-task :default  => :spec
+begin
+  require 'rspec/core'
+  require 'rspec/core/rake_task'
+
+  RSpec::Core::RakeTask.new(:spec)
+  task :default => :spec
+rescue LoadError
+  task :default do
+    puts "HI THERE, there's no default task"
+  end
+end
