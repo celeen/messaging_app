@@ -1,0 +1,86 @@
+html {
+  font-size: 100%;
+}
+
+.container {
+  background-color:#4D1999;
+  height: 568px;
+  width: 320px;
+  font-family: "francois one" , sans-serif;
+  position:relative;
+}
+
+div, input {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: table;
+}
+
+input {
+  /*padding: .25em;*/
+}
+
+.label, input {
+  color: white;
+  font-size: 5vmin;
+  display: table-cell;
+  vertical-align: middle;
+  border: none;
+  width: 100%;
+}
+
+input[type="submit"] {
+  font-size: 4.2vmin;
+  height: 100px;
+}
+
+
+
+div:first-of-type, div:nth-of-type(5), div:nth-of-type(9), div:nth-of-type(13), input[name="username"] {
+  background-color: #297a52;
+}
+
+div:nth-of-type(2), div:nth-of-type(10), input[name="password"] {
+ background-color: #009933;
+}
+
+div:nth-of-type(3), div:nth-of-type(7), div:nth-of-type(11), div:nth-of-type(15), input[type="submit"] {
+  background-color: #006699;
+}
+
+div:nth-of-type(4), div:nth-of-type(12) {
+  background-color: #001c37;
+}
+
+div:nth-of-type(6), div:nth-of-type(14) {
+  background-color: #FFCC00;
+}
+
+div:nth-of-type(8), div:nth-of-type(16) {
+  background-color: #4D1999;
+}
+
+
+::-webkit-input-placeholder {
+   color: white;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+
+}
+
+:-ms-input-placeholder {
+   color: white;
+
+}
+
+
